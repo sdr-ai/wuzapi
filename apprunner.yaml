@@ -1,9 +1,0 @@
-version: 1.0
-runtime: go1
-build:
-  commands:
-    build:
-      - go build main.go
-run:
-  runtime-version: 1.23
-  command: ./main
