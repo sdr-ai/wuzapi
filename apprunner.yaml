@@ -5,5 +5,5 @@ build:
     build:
       - go build main.go
 run:
-  runtime-version: 1.18.10
+  runtime-version: 1.23
   command: ./main

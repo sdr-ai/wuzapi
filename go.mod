@@ -1,6 +1,8 @@
 module wuzapi
 
-go 1.18.10
+go 1.23.0
+
+toolchain go1.23.1
 
 require (
 	github.com/go-resty/resty/v2 v2.11.0
