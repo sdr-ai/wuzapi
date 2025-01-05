@@ -103,7 +103,7 @@ func main() {
 	dbPort := os.Getenv("DB_PORT")
 
 	// String de conexão para PostgreSQL
-	dsn := fmt.Sprintf("user=%s password=%s dbname=%s host=%s port=%s sslmode=disable", dbUser, dbPassword, dbName, dbHost, dbPort)
+	dsn := fmt.Sprintf("user=%s password=%s dbname=%s host=%s port=%s sslmode=require", dbUser, dbPassword, dbName, dbHost, dbPort)
 
 	// Conectando ao banco de dados PostgreSQL usando SQLX
 	db, err := sqlx.Open("postgres", dsn)
